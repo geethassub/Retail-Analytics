@@ -1,0 +1,78 @@
+Date,ORDER_ID,PDT_ID,PDT_CAT_1,PDT_CAT_2,PDT_DESC,CATEGORY,UNIT_PRICE,QUANTITY,Total_Price,CUSTOMER_ID,CUST_FIRST_NAME,CUST_SEX,AGE,CITY,STATE
+1/1/2017,1,CA1,Casual Saree,Printed Casuals,Printed Casual 9621,Women,500,1,500,C1,Harshitha,F,20,Bangalore,Karnataka
+1/1/2017,1,CO2,Cotton Saree,Woven Cotton,Woven Cottons 6889,Women,700,1,700,C1,Harshitha,F,20,Bangalore,Karnataka
+1/1/2017,1,DM1,Dress Material,Lehengas,Lehengas 49,Women,12000,1,12000,C1,Harshitha,F,20,Bangalore,Karnataka
+1/1/2017,1,HB1,Handbag,Party Bags,Diana Korr,Accessories,1000,1,1000,C1,Harshitha,F,20,Bangalore,Karnataka
+1/1/2017,1,JW5,Jewellery,Bangles and Bracelets,Sukkhi,Accessories,130,2,260,C1,Harshitha,F,20,Bangalore,Karnataka
+1/1/2017,2,CL3,Clothing,Casual Shirts,Casual Shirts 251,Men,700,1,700,C2,Rishi,M,22,Coimbatore,Tamil Nadu
+1/1/2017,2,CL6,Clothing,T Shirts,T Shirts 1897,Men,600,1,600,C2,Rishi,M,22,Coimbatore,Tamil Nadu
+1/1/2017,2,WA1,Wallet,Leather,Hornbull,Accessories,400,1,400,C2,Rishi,M,22,Coimbatore,Tamil Nadu
+1/1/2017,2,BE1,Belt,Belt,Belt ,Accessories,300,1,300,C2,Rishi,M,22,Coimbatore,Tamil Nadu
+1/1/2017,11,CA1,Casual Saree,Printed Casuals,Printed Casual 9621,Women,500,3,1500,C11,Rohini,F,30,Chennai,Tamil Nadu
+1/1/2017,11,BW2,Boys Wear,Boys Wear,Boys Wear 88,Kids,3000,1,3000,C11,Rohini,F,30,Chennai,Tamil Nadu
+1/1/2017,11,GW1,Girls Wear,Dhavani Set,Dhavani Set 91,Kids,6000,1,6000,C11,Rohini,F,30,Chennai,Tamil Nadu
+1/1/2017,12,DH1,Dhotis,Silk Dhoti,Silk Dhoti 550,Men,900,2,1800,C12,Rahul,M,30,Tirunelveli,Tamil Nadu
+1/1/2017,12,CL1,Clothing,Formal Shirts,Formal Shirts 652,Men,700,3,2100,C12,Rahul,M,30,Tirunelveli,Tamil Nadu
+1/1/2017,12,DH4,Dhotis,Angavaastram,Angavaastram 123,Men,2000,1,2000,C12,Rahul,M,30,Tirunelveli,Tamil Nadu
+2/10/2017,3,SS1,Silk Sarees,Kanjivaram,Kanjivaram 334,Women,5000,1,5000,C3,Vijaya,F,66,Tirunelveli,Tamil Nadu
+2/10/2017,4,DH2,Dhotis,Silk Dhoti,Silk Dhoti 567,Men,1000,1,1000,C4,Mani,M,70,Coimbatore,Tamil Nadu
+2/10/2017,4,DH4,Dhotis,Angavaastram,Angavaastram 123,Men,2000,1,2000,C4,Mani,M,70,Coimbatore,Tamil Nadu
+2/10/2017,4,PR2,Perfume,Yardley London,Yardley London,Accessories,200,1,200,C4,Mani,M,70,Coimbatore,Tamil Nadu
+2/10/2017,13,RW1,Ready to Wear,Churidhar Kurta Sets,Churidhar Kurta Sets 3803,Women,2500,1,2500,C13,Rama,F,25,Chennai,Tamil Nadu
+2/10/2017,13,RW3,Ready to Wear,Saree Blouses,Saree Blouses 961,Women,700,1,700,C13,Rama,F,25,Chennai,Tamil Nadu
+2/10/2017,13,HD3,Home Decor,Bed Pillows,Trident,Home Furnishing,200,1,200,C13,Rama,F,25,Chennai,Tamil Nadu
+2/10/2017,14,CL5,Clothing,T Shirts,T Shirts 1895,Men,800,4,3200,C14,Charan,M,20,Bangalore,Karnataka
+2/10/2017,14,CL8,Clothing,Jeans,Jeans 1007,Men,1200,1,1200,C14,Charan,M,20,Bangalore,Karnataka
+3/17/2017,5,DM1,Dress Material,Lehengas,Lehengas 49,Women,12000,1,12000,C5,Mala,F,45,Chennai,Tamil Nadu
+3/17/2017,5,JW8,Jewellery,Jewellery Sets,Reeva,Accessories,200,2,400,C5,Mala,F,45,Chennai,Tamil Nadu
+3/17/2017,6,DM3,Dress Material,Churidhar Kurta Sets,Churidhar Kurta Sets 4210,Women,800,2,1600,C6,Rama,F,25,Coimbatore,Tamil Nadu
+3/17/2017,6,HB1,Handbag,Party Bags,Diana Korr,Accessories,1000,1,1000,C6,Rama,F,25,Coimbatore,Tamil Nadu
+3/17/2017,6,PR1,Perfume,Rexona,Rexona,Accessories,200,1,200,C6,Rama,F,25,Coimbatore,Tamil Nadu
+3/17/2017,21,CA1,Casual Saree,Printed Casuals,Printed Casual 9621,Women,500,1,500,C21,Renu,F,25,Bangalore,Karnataka
+3/17/2017,21,DM3,Dress Material,Churidhar Kurta Sets,Churidhar Kurta Sets 4210,Women,800,1,800,C21,Renu,F,25,Bangalore,Karnataka
+3/17/2017,21,HB1,Handbag,Party Bags,Diana Korr,Accessories,1000,1,1000,C21,Renu,F,25,Bangalore,Karnataka
+3/17/2017,21,PR1,Perfume,Rexona,Rexona,Accessories,200,1,200,C21,Renu,F,25,Bangalore,Karnataka
+3/17/2017,22,DH1,Dhotis,Silk Dhoti,Silk Dhoti 550,Men,900,1,900,C22,Manu,M,70,Tirunelveli,Tamil Nadu
+3/17/2017,22,DH4,Dhotis,Angavaastram,Angavaastram 123,Men,2000,1,2000,C22,Manu,M,70,Tirunelveli,Tamil Nadu
+3/17/2017,22,BE1,Belt,Belt,Belt ,Accessories,300,1,300,C22,Manu,M,70,Tirunelveli,Tamil Nadu
+4/20/2017,7,DM1,Dress Material,Lehengas,Lehengas 49,Women,12000,1,12000,C7,Hema,F,20,Tirunelveli,Tamil Nadu
+4/20/2017,7,HB1,Handbag,Party Bags,Diana Korr,Accessories,1000,1,1000,C7,Hema,F,20,Tirunelveli,Tamil Nadu
+4/20/2017,7,JW5,Jewellery,Bangles and Bracelets,Sukkhi,Accessories,130,2,260,C7,Hema,F,20,Tirunelveli,Tamil Nadu
+4/20/2017,8,CL6,Clothing,T Shirts,T Shirts 1897,Men,600,1,600,C8,Ravi,M,22,Tirunelveli,Tamil Nadu
+4/20/2017,8,WA1,Wallet,Leather,Hornbull,Accessories,400,1,400,C8,Ravi,M,22,Tirunelveli,Tamil Nadu
+4/20/2017,8,BE1,Belt,Belt,Belt ,Accessories,300,1,300,C8,Ravi,M,22,Tirunelveli,Tamil Nadu
+4/20/2017,9,HD1,Home Decor,Bedsheets,Bombay Deing ,Home Furnishing,500,3,1500,C9,Rama,F,30,Chennai,Tamil Nadu
+4/20/2017,9,CO6,Cotton Saree,Printed Cotton,Printed Cotton 2134,Women,600,1,600,C9,Rama,F,30,Chennai,Tamil Nadu
+4/20/2017,9,DM1,Dress Material,Lehengas,Lehengas 49,Women,12000,1,12000,C9,Rama,F,30,Chennai,Tamil Nadu
+4/20/2017,10,FS1,Fancy Silk Saree,Mysore Silk Saree,Mysore Silk Saree 6800,Women,4000,1,4000,C10,Sudha,F,45,Chennai,Tamil Nadu
+4/20/2017,10,GS1,Gift Saree,Gift Saree,Wedding Collection 123,Women,13000,1,13000,C10,Sudha,F,45,Chennai,Tamil Nadu
+4/20/2017,10,PV2,Pavadai,Kids Pavadai Unstitched,Kids Pavadai 1179,KIDS,1200,2,2400,C10,Sudha,F,45,Chennai,Tamil Nadu
+4/20/2017,23,DM1,Dress Material,Lehengas,Lehengas 49,Women,12000,2,24000,C23,Manu,F,25,Bangalore,Karnataka
+4/20/2017,23,HB1,Handbag,Party Bags,Diana Korr,Accessories,1000,2,2000,C23,Manu,F,25,Bangalore,Karnataka
+4/20/2017,23,JW5,Jewellery,Bangles and Bracelets,Sukkhi,Accessories,130,2,260,C23,Manu,F,25,Bangalore,Karnataka
+4/20/2017,24,DM3,Dress Material,Churidhar Kurta Sets,Churidhar Kurta Sets 4210,Women,800,1,800,C24,Madhu,F,30,Coimbatore,Tamil Nadu
+4/20/2017,24,HB1,Handbag,Party Bags,Diana Korr,Accessories,1000,1,1000,C24,Madhu,F,30,Coimbatore,Tamil Nadu
+4/20/2017,24,PR1,Perfume,Rexona,Rexona,Accessories,200,2,400,C24,Madhu,F,30,Coimbatore,Tamil Nadu
+5/1/2017,15,CL6,Clothing,T Shirts,T Shirts 1897,Men,600,2,1200,C15,Ganesh,M,35,Chennai,Tamil Nadu
+5/1/2017,15,CL8,Clothing,Jeans,Jeans 1007,Men,1200,1,1200,C15,Ganesh,M,35,Chennai,Tamil Nadu
+5/1/2017,16,DH1,Dhotis,Silk Dhoti,Silk Dhoti 550,Men,900,2,1800,C16,Balu,M,60,Tirunelveli,Tamil Nadu
+5/1/2017,16,DH4,Dhotis,Angavaastram,Angavaastram 123,Men,2000,1,2000,C16,Balu,M,60,Tirunelveli,Tamil Nadu
+5/1/2017,16,BE1,Belt,Belt,Belt ,Accessories,300,1,300,C16,Balu,M,60,Tirunelveli,Tamil Nadu
+5/1/2017,17,SS4,Silk Sarees,9 Yards,9 Yards 2326,Women,4000,1,4000,C17,Madhu,F,55,Coimbatore,Tamil Nadu
+5/1/2017,17,JW1,Jewellery,Earrings,Sukhi,Accessories,160,2,320,C17,Madhu,F,55,Coimbatore,Tamil Nadu
+5/1/2017,17,JW3,Jewellery,Rings,Yellow Chimes,Accessories,266,2,532,C17,Madhu,F,55,Coimbatore,Tamil Nadu
+5/1/2017,18,RW2,Ready to Wear,Kurtas,Kurti 224,Women,2000,2,4000,C18,Rekha,F,25,Bangalore,Karnataka
+5/1/2017,18,HB5,Handbag,College Bags,Sling bag,Accessories,600,1,600,C18,Rekha,F,25,Bangalore,Karnataka
+5/1/2017,18,PR1,Perfume,Rexona,Rexona,Accessories,200,2,400,C18,Rekha,F,25,Bangalore,Karnataka
+6/1/2017,19,FS1,Fancy Silk Saree,Mysore Silk Saree,Mysore Silk Saree 6800,Women,4000,2,8000,C1,Harshitha,F,20,Bangalore,Karnataka
+6/1/2017,19,GS1,Gift Saree,Gift Saree,Wedding Collection 123,Women,13000,2,26000,C1,Harshitha,F,20,Bangalore,Karnataka
+6/1/2017,19,PV2,Pavadai,Kids Pavadai Unstitched,Kids Pavadai 1179,KIDS,1200,2,2400,C1,Harshitha,F,20,Bangalore,Karnataka
+6/1/2017,20,DH2,Dhotis,Silk Dhoti,Silk Dhoti 567,Men,1000,1,1000,C4,Mani,M,70,Coimbatore,Tamil Nadu
+6/1/2017,20,DH4,Dhotis,Angavaastram,Angavaastram 123,Men,2000,1,2000,C4,Mani,M,70,Coimbatore,Tamil Nadu
+6/1/2017,20,PR2,Perfume,Yardley London,Yardley London,Accessories,200,1,200,C4,Mani,M,70,Coimbatore,Tamil Nadu
+6/1/2017,20,PR2,Perfume,Yardley London,Yardley London,Accessories,200,1,200,C4,Mani,M,70,Coimbatore,Tamil Nadu
+6/1/2017,25,FS12,Fancy Silk Saree,Printed Raw silk saree,Printed Raw silk saree 227,Women,4500,1,4500,C25,Megha,F,35,Tirunelveli,Tamil Nadu
+6/1/2017,25,JW5,Jewellery,Bangles and Bracelets,Sukkhi,Accessories,130,1,130,C25,Megha,F,35,Tirunelveli,Tamil Nadu
+6/1/2017,26,CL5,Clothing,T Shirts,T Shirts 1895,Men,800,1,800,C26,Madhu,M,25,Chennai,Tamil Nadu
+6/1/2017,26,WA1,Wallet,Leather,Hornbull,Accessories,400,1,400,C26,Madhu,M,25,Chennai,Tamil Nadu
+6/1/2017,26,CL7,Clothing,Jeans,Jeans 1004,Men,1000,1,1000,C26,Madhu,M,25,Chennai,Tamil Nadu
