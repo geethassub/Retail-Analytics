@@ -4,7 +4,7 @@ library(shinydashboard)
 ########### Header Definition ##################
 
 header <- dashboardHeader(
-  title = config$title,
+  title = "Akshi",
   # Messages
   dropdownMenu(type = "messages",
                messageItem(
