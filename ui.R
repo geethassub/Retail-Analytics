@@ -31,12 +31,21 @@ sidebar <- dashboardSidebar(
 )
 
 
+############# YTD Figures #########################
+ytd.figures <-     fluidRow(
+   infoBoxOutput("YTDSales")
+  ,infoBoxOutput("YTDOrders")
+  
+)
+
+
 ############## Body definition #####################
 
 body    <- dashboardBody(
   tabItems(
     tabItem(tabName = "dashboard",
-            h2("Dashboard tab content")
+            ytd.figures
+            
     ),
     
     tabItem(tabName = "widgets",
