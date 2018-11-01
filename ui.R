@@ -27,7 +27,8 @@ sidebar <- dashboardSidebar(
   sidebarMenu(
     menuItem("Sales", tabName = "sales", icon = icon("dashboard")),
     menuItem("Trends", icon = icon("th"), tabName = "trends"),
-    menuItem("City", icon = icon("bar-chart-o"), tabName = "city")
+    menuItem("City", icon = icon("bar-chart-o"), tabName = "city"),
+    menuItem("xsell", icon = icon("anchor"), tabName = "xsell")
     
   )
 )
@@ -79,6 +80,32 @@ city.plots <- box(
   
 )
 
+############ Xsell ##############################
+
+xsell.panels.config <- box(
+  title = "Thresholds", status = "primary", solidHeader = TRUE, width = '100%', align='center',
+  fluidRow(
+    sliderInput("Support", "Support:", min = 0.01, max = 1.0, value = 0.01, width = '90%'),
+    sliderInput("Confidence", "Confidence:", min = 0.05, max = 1.0, value = 0.05, width='90%')
+  )
+)
+
+xsell.panels <- box(
+  title = "Rules", status = "primary", solidHeader = TRUE, width = '100%', align='center',
+  fluidRow(
+    column(width = 12, align = 'center',
+    tabsetPanel(
+      id = 'xsell',
+      tabPanel('Rules',  DT::dataTableOutput('rulesTable')),
+      tabPanel('Explore', plotOutput('explorePlot')),
+      tabPanel('Item Groups',  plotOutput('graphPlot'))
+    )
+    )
+  )
+)
+
+
+
 
 
 ############## Body definition #####################
@@ -96,7 +123,12 @@ body    <- dashboardBody(
     ),
     
     tabItem(tabName = "city",
-            city.plots)
+            city.plots
+    ),
+    tabItem(tabName = "xsell",
+            xsell.panels.config,
+            xsell.panels
+            )
     
   )
 )

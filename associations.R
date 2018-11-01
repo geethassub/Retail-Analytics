@@ -1,55 +1,25 @@
-#library(config)
-library(dplyr)
-library(lubridate)
+########################################################################
+#   
+#   R Data Analysis Projects
+#
+#   Chapter 1
+#
+#   Building Recommender System
+#   A step step approach to build Assocation Rule Mining 
+#
+#   Script:
+#
+#   Rshiny app
+#
+#   Gopi Subramanian
+#########################################################################
+
+library(shiny)
 library(plotly)
 library(arules)
 library(igraph)
 library(arulesViz)
 
-
-# Read Configruations
-
-#config.contents <- config::get(file = "conf/config.yml")
-
-
-# Read Input Data
-txn.data <- read.csv('data/Transaction_1.csv')
-
-cities <- unique(txn.data$CITY)
-
-# Clean up
-txn.data$Month <- factor(txn.data$Month, levels = c( "January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ))
-txn.data$Day_1 <- factor(txn.data$Day_1, levels = c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"))
-txn.data$QUANTITY <- as.numeric(txn.data$QUANTITY)
-txn.data$UNIT_PRICE <- as.numeric(txn.data$UNIT_PRICE)
-txn.data$Total_Price <- as.numeric(txn.data$Total_Price)
-
-txn.data$age_bin[txn.data$AGE < 20] = "Less than 20"
-txn.data$age_bin[txn.data$AGE >= 20 & txn.data$AGE < 30] = "20 to 30"
-txn.data$age_bin[txn.data$AGE >= 30 & txn.data$AGE < 40] = "30 to 40"
-txn.data$age_bin[txn.data$AGE >= 40 & txn.data$AGE < 50] = "40 to 50"
-txn.data$age_bin[txn.data$AGE >= 50 & txn.data$AGE < 60] = "50 to 60"
-txn.data$age_bin[txn.data$AGE >= 60] = "60 and above"
-txn.data$Date <- mdy(txn.data$Date)
-
-
-
-
-# YTD Sales
-ytd.sales <- txn.data %>% summarise(TotalSales = sum(Total_Price)) 
-ytd.sales <- ytd.sales$TotalSales
-
-# YRS Orders
-ytd.orders <- txn.data %>% summarise(TotalOrders = n_distinct(ORDER_ID))
-ytd.orders <- ytd.orders$TotalOrders
-
-# Avg Monthly
-
-
-
-
-
-# Association Rule Mining
 
 get.txn <- function(data.path, columns){
   # Get transaction object for a given data file
@@ -133,7 +103,51 @@ plot.graph <- function(cross.sell.rules){
   
 }
 
-columns <- c("ORDER_ID", "PDT_CAT_1") ## columns of interest in data file
-data.path = 'data/Transaction_1.csv'  ## Path to data file
+
+columns <- c("order_id", "product_id") ## columns of interest in data file
+data.path = '../../data/data.csv'  ## Path to data file
 transactions.obj <- get.txn(data.path, columns) ## create txn object
+
+server <- function(input, output) {
+  
+  cross.sell.rules <- reactive({
+    support <- input$Support
+    confidence <- input$Confidence
+    cross.sell.rules <- find.rules( transactions.obj, support, confidence )
+    cross.sell.rules$rules <- as.character(cross.sell.rules$rules)              
+    return(cross.sell.rules)
+    
+  })
+  
+  gen.rules <- reactive({
+    support <- input$Support
+    confidence <- input$Confidence
+    gen.rules <- get.rules(  support, confidence ,transactions.obj)
+    return(gen.rules)
+    
+  })
+  
+  
+  output$rulesTable <- DT::renderDataTable({
+    cross.sell.rules()
+  })
+  
+  output$graphPlot <- renderPlot({
+    g <-plot.graph(cross.sell.rules())
+    plot(g)
+  })
+  
+  output$explorePlot <- renderPlot({
+    plot(x = gen.rules(), method = NULL, 
+         measure = "support", 
+         shading = "lift", interactive = FALSE)
+  })
+  
+  
+}
+
+
+
+
+
 

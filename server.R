@@ -1,5 +1,6 @@
 
 library(ggplot2)
+library(DT)
 
 server <- function(input, output) { 
   
@@ -101,5 +102,43 @@ server <- function(input, output) {
       theme(axis.text.x = element_text(angle = 90))+ theme_minimal() +
       labs(title = "Trend in Sales (Quantity)", x = "Month", y = "Average Quantity")
   )
+  
+  
+  cross.sell.rules <- reactive({
+    support <- input$Support
+    confidence <- input$Confidence
+    cross.sell.rules <- find.rules( transactions.obj, support, confidence )
+    cross.sell.rules$rules <- as.character(cross.sell.rules$rules)              
+    return(cross.sell.rules)
+    
+  })
+  
+  gen.rules <- reactive({
+    support <- input$Support
+    confidence <- input$Confidence
+    gen.rules <- get.rules(  support, confidence ,transactions.obj)
+    return(gen.rules)
+    
+  })
+  
+  
+  output$rulesTable <- DT::renderDataTable({
+    DT::datatable(
+    cross.sell.rules(),options = list(pageLength = 10,lengthChange=FALSE))%>%
+      formatRound(c(3:9), 2) %>% 
+      formatStyle(columns = c(3:9), 'text-align' = 'center')
+  })
+  output$graphPlot <- renderPlot({
+    g <-plot.graph(cross.sell.rules())
+    plot(g)
+  })
+  
+  output$explorePlot <- renderPlot({
+    plot(x = gen.rules(), method = NULL, 
+         measure = "support", 
+         shading = "lift", interactive = FALSE)
+  })
+  
+  
   
 }
