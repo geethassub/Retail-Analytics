@@ -1,16 +1,17 @@
-library(config)
+#library(config)
 library(dplyr)
 library(lubridate)
 
 
 # Read Configruations
 
-config.contents <- config::get(file = "conf/config.yml")
+#config.contents <- config::get(file = "conf/config.yml")
 
 
 # Read Input Data
 txn.data <- read.csv('data/Transaction_1.csv')
 
+cities <- unique(txn.data$CITY)
 
 # Clean up
 txn.data$Month <- factor(txn.data$Month, levels = c( "January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ))

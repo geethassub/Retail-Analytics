@@ -3,6 +3,26 @@ library(ggplot2)
 
 server <- function(input, output) { 
   
+  
+  react.data <- reactiveValues()
+  
+  observe({
+  
+    selected.city <- input$selectCity
+    react.data$city.data <- txn.data[txn.data$CITY == selected.city,]
+      
+  })
+  
+  output$citySalesChart <- renderPlot(
+    
+    ggplot(data = react.data$city.data, aes(x = Day_1, y = Total_Price, fill = Month))+
+      stat_summary(fun.y = "mean", geom = "bar", position = "dodge")+
+      theme(axis.text.x = element_text(angle = 90))+ theme_minimal() +
+      labs(title = paste0("Average Sales Day Wise"," ", input$selectCity))+
+      facet_grid(~CUST_SEX)
+    
+  )
+  
   output$YTDSales <- renderInfoBox({
     infoBox("YTD Sales", value = paste(c('INR ', format(ytd.sales, big.mark=",", scientific = FALSE) )
                                        , collapse =  ": "), icon = shiny::icon("credit-card"), fill = TRUE)
@@ -31,8 +51,7 @@ server <- function(input, output) {
     ggplot(txn.data, aes(Month, Total_Price, fill = CITY))+
       geom_bar(stat = "identity")+
       labs(title = "Sales by Value- 2017", x = "Month", y = "Sales")+
-      theme_bw()+
-      theme(axis.text.x = element_text(angle = 90))+
+      theme_minimal() +      theme(axis.text.x = element_text(angle = 90))+
       facet_grid(~CITY)
 
   )
@@ -42,7 +61,7 @@ server <- function(input, output) {
     ggplot(txn.data, aes(Month, QUANTITY, fill = CITY))+
       geom_bar(stat = "identity")+
       labs(title = "Sales by quantity - 2017", x = "Month", y = "Sales")+
-      theme_bw()+
+      theme_minimal()+
       theme(axis.text.x = element_text(angle = 90))+
       facet_grid(~CITY)
     
@@ -53,7 +72,7 @@ server <- function(input, output) {
     ggplot(txn.data, aes(x = Day_1, y = Total_Price, fill = CITY))+
       stat_summary(fun.y = "mean", geom = 'bar', position = "dodge")+
       labs(title = "City Wise sale details (BY Gender)", x = "Day of the week", y = "Average Sales")+
-      theme(axis.text.x = element_text(angle = 90))+
+      theme(axis.text.x = element_text(angle = 90))+ theme_minimal() +
       facet_grid(~CUST_SEX)
   )
   
@@ -61,7 +80,7 @@ server <- function(input, output) {
     ggplot(txn.data, aes(x = Month, y = Total_Price, fill = CITY))+
       stat_summary(fun.y = "mean", geom = 'bar', position = "dodge")+
       labs(title = "City Wise sale details(By Gender)", x = "Month", y = "Average Sales")+
-      theme(axis.text.x = element_text(angle = 90))+
+      theme(axis.text.x = element_text(angle = 90))+ theme_minimal() +
       facet_grid(~CUST_SEX)
   )
   
@@ -70,7 +89,7 @@ server <- function(input, output) {
       facet_wrap(~ CITY) + theme(legend.position = "none") + 
       stat_summary(fun.y="mean", geom="line") + 
       geom_smooth(method="lm", se=FALSE, linetype=3, color="black")+
-      theme(axis.text.x = element_text(angle = 90))+
+      theme(axis.text.x = element_text(angle = 90))+ theme_minimal() +
       labs(title = "Trend in Sales", x = "Month", y = "Average Sales")
   )
   
@@ -79,7 +98,7 @@ server <- function(input, output) {
       facet_wrap(~ CITY) + theme(legend.position = "none") + 
       stat_summary(fun.y="mean", geom="line") + 
       geom_smooth(method="lm", se=FALSE, linetype=3, color="black")+
-      theme(axis.text.x = element_text(angle = 90))+
+      theme(axis.text.x = element_text(angle = 90))+ theme_minimal() +
       labs(title = "Trend in Sales (Quantity)", x = "Month", y = "Average Quantity")
   )
   

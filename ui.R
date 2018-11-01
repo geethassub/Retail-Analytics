@@ -27,7 +27,7 @@ sidebar <- dashboardSidebar(
   sidebarMenu(
     menuItem("Sales", tabName = "sales", icon = icon("dashboard")),
     menuItem("Trends", icon = icon("th"), tabName = "trends"),
-    menuItem("City", icon = icon("city"), tabName = "city")
+    menuItem("City", icon = icon("bar-chart-o"), tabName = "city")
     
   )
 )
@@ -66,6 +66,18 @@ sales.trend <- fluidRow(
   
 )
 
+############# City plots ###########################
+
+city.plots <- box(
+  title = "City Sales", status = "primary", solidHeader = TRUE, width='100%',align = 'center',
+  fluidRow(
+    selectInput(inputId='selectCity', label='Select city', choices=cities, width='90%')			
+  ),
+  fluidRow(
+    plotOutput("citySalesChart", width='90%')
+  )
+  
+)
 
 
 
@@ -83,7 +95,8 @@ body    <- dashboardBody(
             sales.trend
     ),
     
-    tabItem(tabName = "city")
+    tabItem(tabName = "city",
+            city.plots)
     
   )
 )
