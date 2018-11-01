@@ -1,0 +1,83 @@
+﻿PDT_ID,PDT_CAT_1,PDT_CAT_2,PDT_DESC,CATEGORY,UNIT_PRICE
+CA1,Casual Saree,Printed Casuals,Printed Casual 9621,Women,500
+CA2,Casual Saree,Printed Casuals,Printed Casual 9624,Women,400
+CA3,Casual Saree,Embroidered Casuals,Embroidered Casuals 161,Women,1200
+CA4,Casual Saree,Embroidered Casuals,Embroidered Casuals 165,Women,1500
+CO1,Cotton Saree,Woven Cotton,Woven Cottons 6800,Women,600
+CO2,Cotton Saree,Woven Cotton,Woven Cottons 6889,Women,700
+CO3,Cotton Saree,Embroidered Cotton,Embroidered Cotton7799,Women,1200
+CO4,Cotton Saree,Embroidered Cotton,Embroidered Cotton7800,Women,1300
+CO5,Cotton Saree,Printed Cotton,Printed Cotton 2100,Women,400
+CO6,Cotton Saree,Printed Cotton,Printed Cotton 2134,Women,600
+DM1,Dress Material,Lehengas,Lehengas 49,Women,12000
+DM2,Dress Material,Lehengas,Lehengas 50,Women,20000
+DM3,Dress Material,Churidhar Kurta Sets,Churidhar Kurta Sets 4210,Women,800
+DM4,Dress Material,Churidhar Kurta Sets,Churidhar Kurta Sets 4200,Women,1000
+FS1,Fancy Silk Saree,Mysore Silk Saree,Mysore Silk Saree 6800,Women,4000
+FS2,Fancy Silk Saree,Mysore Silk Saree,Mysore Silk Saree 6811,Women,6000
+FS3,Fancy Silk Saree,Woven Tussars,Woven Tussars 516,Women,2000
+FS4,Fancy Silk Saree,Woven Tussars,Woven Tussars 517,Women,3000
+FS5,Fancy Silk Saree,Woven Raw silk saree,Woven Raw silk saree290,Women,1500
+FS6,Fancy Silk Saree,Woven Raw silk saree,Woven Raw silk saree 291,Women,2500
+FS7,Fancy Silk Saree,Printed Silk Saree,Printed Silk Saree 571,Women,2000
+FS8,Fancy Silk Saree,Printed Silk Saree,Printed Silk Saree 572,Women,3000
+FS9,Fancy Silk Saree,Printed Tussars,Printed Tussars 292,Women,4500
+FS10,Fancy Silk Saree,Printed Tussars,Printed Tussars 295,Women,6000
+FS11,Fancy Silk Saree,Printed Raw silk saree,Printed Raw silk saree 226,Women,1800
+FS12,Fancy Silk Saree,Printed Raw silk saree,Printed Raw silk saree 227,Women,4500
+FS13,Fancy Silk Saree,Embroidered Raw silk saree,Embroidered Raw silk saree 224,Women,2000
+FS14,Fancy Silk Saree,Embroidered Raw silk saree,Embroidered Raw silk saree 225,Women,4000
+GS1,Gift Saree,Gift Saree,Wedding Collection 123,Women,13000
+GS2,Gift Saree,Gift Saree,Wedding Collection 123,Women,80000
+PV1,Pavadai,Kids Pavadai Ready to wear,Kids Pavadai 11764,KIDS,3500
+PV2,Pavadai,Kids Pavadai Unstitched,Kids Pavadai 1179,KIDS,1200
+RW1,Ready to Wear,Churidhar Kurta Sets,Churidhar Kurta Sets 3803,Women,2500
+RW2,Ready to Wear,Kurtas,Kurti 224,Women,2000
+RW3,Ready to Wear,Saree Blouses,Saree Blouses 961,Women,700
+SS1,Silk Sarees,Kanjivaram,Kanjivaram 334,Women,5000
+SS2,Silk Sarees,Wedding Collection,Wedding Collection 5920,Women,3000
+SS3,Silk Sarees,Theme Silk Saree,Collection 123,Women,10000
+SS4,Silk Sarees,9 Yards,9 Yards 2326,Women,4000
+CL1,Clothing,Formal Shirts,Formal Shirts 652,Men,700
+CL2,Clothing,Formal Shirts,Formal Shirts 656,Men,1000
+CL3,Clothing,Casual Shirts,Casual Shirts 251,Men,700
+CL4,Clothing,Casual Shirts,Casual Shirts 289,Men,900
+CL5,Clothing,T Shirts,T Shirts 1895,Men,800
+CL6,Clothing,T Shirts,T Shirts 1897,Men,600
+CL7,Clothing,Jeans,Jeans 1004,Men,1000
+CL8,Clothing,Jeans,Jeans 1007,Men,1200
+DH1,Dhotis,Silk Dhoti,Silk Dhoti 550,Men,900
+DH2,Dhotis,Silk Dhoti,Silk Dhoti 567,Men,1000
+DH3,Dhotis,Cotton Dhoti,Cotton Dhoti Fancy Border 123,Men,3000
+DH4,Dhotis,Angavaastram,Angavaastram 123,Men,2000
+BW1,Boys Wear,Boys Wear,Boys Wear 68,Kids,1600
+BW2,Boys Wear,Boys Wear,Boys Wear 88,Kids,3000
+GW1,Girls Wear,Dhavani Set,Dhavani Set 91,Kids,6000
+GW2,Girls Wear,Dhavani Set,Dhavani Set 98,Kids,8000
+PA1,Pavadai,Pavdai Ready to wear,Kids Pavadai 11750,Kids,3000
+PA2,Pavadai,Pavdai Ready to wear,Kids Pavadai 11688,Kids,9500
+PA3,Pavadai,Pavdai Unstitched,Kids Pavadai 11699,Kids,1500
+PA4,Pavadai,Pavdai Unstitched,Kids Pavadai 11555,Kids,2500
+HB1,Handbag,Party Bags,Diana Korr,Accessories,1000
+HB2,Handbag,Clutches,Kraft,Accessories,400
+HB3,Handbag,Leather Handbags,Hidesign,Accessories,3000
+HB4,Handbag,Ethnic bags,Tooba,Accessories,800
+HB5,Handbag,College Bags,Sling bag,Accessories,600
+HB6,Handbag,Skybags,Laptop Backpack,Accessories,1000
+WA1,Wallet,Leather,Hornbull,Accessories,400
+WA1,Wallet,Metal,Quirk,Accessories,500
+BE1,Belt,Belt,Belt ,Accessories,300
+JW1,Jewellery,Earrings,Sukhi,Accessories,160
+JW1,Jewellery,Earrings,Meenaz,Accessories,400
+JW3,Jewellery,Rings,Yellow Chimes,Accessories,266
+JW4,Jewellery,Rings,Karat,Accessories,500
+JW5,Jewellery,Bangles and Bracelets,Sukkhi,Accessories,130
+JW6,Jewellery,Bangles and Bracelets,Youbela,Accessories,500
+JW7,Jewellery,Jewellery Sets,Sukhi,Accessories,400
+JW8,Jewellery,Jewellery Sets,Reeva,Accessories,200
+PR1,Perfume,Rexona,Rexona,Accessories,200
+PR2,Perfume,Yardley London,Yardley London,Accessories,200
+HD1,Home Decor,Bedsheets,Bombay Deing ,Home Furnishing,500
+HD2,Home Decor,Bedsheets,Raymond,Home Furnishing,800
+HD3,Home Decor,Bed Pillows,Trident,Home Furnishing,200
+HD4,Home Decor,Bed Pillows,Portico,Home Furnishing,300
